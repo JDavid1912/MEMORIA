@@ -61,7 +61,7 @@ public class Main {
 
     public static void main(String[] args) {
         Main gestion = new Main();
-
+// Se agregan empleados
         gestion.agregarEmpleado("Juan Pérez", "Desarrollador");
         gestion.agregarEmpleado("Ana Gómez", "Diseñadora");
         gestion.agregarEmpleado("Carlos López", "Gerente");
