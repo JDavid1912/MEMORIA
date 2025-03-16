@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-class Empleado {
+class Empleado { // Creación de la clase empleado
     private static int contadorEmpleados = 0; // Memoria estática
     private int id;
     private String nombre;
@@ -62,19 +62,20 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
+            // Se enseña el menu de opciones al ususario
             System.out.println("\n1. Agregar empleado");
             System.out.println("2. Mostrar empleados");
             System.out.println("3. Salir");
             System.out.print("Elige una opción: ");
             int opcion = scanner.nextInt();
             scanner.nextLine(); // Consumir la nueva línea
-
+            // Se crea el comando swich para las opciones que puede elegir el ususario
             switch (opcion) {
                 case 1:
                     System.out.print("Ingrese el nombre del empleado: ");
-                    String nombre = scanner.nextLine();
+                    String nombre = scanner.nextLine(); // Variable de String para digitar el nombre
                     System.out.print("Ingrese el salario del empleado: ");
-                    double salario = scanner.nextDouble();
+                    double salario = scanner.nextDouble(); // Variable de double para digitar el salario si contiene desimales
                     gestor.agregarEmpleado(nombre, salario);
                     break;
                 case 2:
